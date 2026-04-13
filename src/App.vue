@@ -27,24 +27,6 @@ export default {
 </script>
 
 <style lang="less">
-/deep/.el-button--primary {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 6px 24px;
-    gap: 10px;
-
-    /* 1 */
-
-    background: linear-gradient(326.82deg, #ff2472 -5.17%, #ff5f61 85.53%) !important;
-    border-radius: 150px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
 @import '../public/css/main.css';
 @import '../public/css/color-dark.css';
 ::selection {

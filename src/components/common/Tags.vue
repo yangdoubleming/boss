@@ -176,22 +176,6 @@ export default {
     color: #ffffff;
 }
 
-.tags-li.active {
-    color: #fff;
-    background: linear-gradient(326.82deg, #FF2472 -5.17%, #FF5F61 85.53%);
-    border: none;
-}
-
-.tags-li-title {
-    float: left;
-    max-width: 120px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    margin-right: 5px;
-    margin-top: 4px;
-    color: #666;
-}
 
 .tags-li.active .tags-li-title {
     color: #fff;

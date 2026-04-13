@@ -1,47 +1,40 @@
 <template>
     <div class="login-wrap">
-        <div class="top-menu">
-            <a href="https://www.dowsure.com/" target="_blank"><img src="../../../public/img/dowsure-new.svg"
-                    style="margin-left: 40px; margin-top: 13px" /></a>
-            <Language style="float: right; margin-right: 40px; margin-top: -13px" />
-        </div>
-        <div class="ms-login" v-if="isPhone == 2">
-            <div class="ms-login-box">
-                <div class="ms-loginto">{{ $t('common_login2') }}</div>
-                <div class="ms-title">BOSS V3.0</div>
-                <el-form :model="param" :rules="rules" ref="login" label-width="0px" class="ms-content">
-                    <el-form-item prop="username">
-                        <el-input v-model="param.username" placeholder="username">
-                            <el-button slot="prepend" icon="el-icon-user"></el-button>
-                        </el-input>
-                    </el-form-item>
-                    <el-form-item prop="password">
-                        <el-input type="password" placeholder="password" v-model="param.password"
-                            @keyup.enter.native="submitForm()">
-                            <el-button slot="prepend" icon="el-icon-unlock"></el-button>
-                        </el-input>
-                    </el-form-item>
-                    <div class="login-btn">
-                        <el-button type="primary" @click="submitForm()">{{ $t('common_login') }}</el-button>
-                    </div>
-                    <!-- <p class="login-tips">Tips : 。</p> -->
-                </el-form>
-            </div>
+        <Language style="float: right;margin-right: 30px;margin-top: 20px;" />
+        <div class="ms-login" v-if="isPhone==2">
+            <div class="ms-title">BOSS V3.0</div>
+            <el-form :model="param" :rules="rules" ref="login" label-width="0px" class="ms-content">
+                <el-form-item prop="username">
+                    <el-input v-model="param.username" placeholder="username">
+                        <el-button slot="prepend" icon="el-icon-lx-people"></el-button>
+                    </el-input>
+                </el-form-item>
+                <el-form-item prop="password">
+                    <el-input
+                        type="password"
+                        placeholder="password"
+                        v-model="param.password"
+                        @keyup.enter.native="submitForm()"
+                    >
+                        <el-button slot="prepend" icon="el-icon-lx-lock"></el-button>
+                    </el-input>
+                </el-form-item>
+                <div class="login-btn">
+                    <el-button type="primary" @click="submitForm()">{{$t('common_login')}}</el-button>
+                </div>
+                <!-- <p class="login-tips">Tips : 。</p> -->
+            </el-form>
         </div>
 
-        <div v-if="isPhone == 1" class="ms-login" style="
-                width: 90%;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                margin: auto auto;
-                height: 500px;
-                padding: 0 1%;
-                box-sizing: border-box;
-            ">
-            <div class="ms-title" style="font-size: 30px; height: 60px; margin-top: 50px; line-height: 30px">BOSS V3.0
-            </div>
+        <div
+            v-if="isPhone==1"
+            class="ms-login"
+            style="width:90%;left:0;right:0;top:0;bottom:0;margin:auto auto;height:500px;padding:0 1%;box-sizing:border-box"
+        >
+            <div
+                class="ms-title"
+                style="font-size:30px;height:60px;margin-top:50px; line-height:30px;"
+            >BOSS V3.0</div>
             <el-form :model="param" :rules="rules" ref="login" label-width="0px" class="ms-content">
                 <el-form-item>
                     <div class="inputc">
@@ -50,14 +43,20 @@
                 </el-form-item>
                 <el-form-item>
                     <div class="inputc">
-                        <el-input type="password" placeholder="password" v-model="param.password"
-                            @keyup.enter.native="submitForm()"></el-input>
+                        <el-input
+                            type="password"
+                            placeholder="password"
+                            v-model="param.password"
+                            @keyup.enter.native="submitForm()"
+                        ></el-input>
                     </div>
                 </el-form-item>
                 <div class="login-btn">
-                    <el-button type="primary" @click="submitForm()"
-                        style="height: 70px; font-size: 33px; margin-top: 20px; border-radius: 15px">{{
-                            $t('common_login') }}</el-button>
+                    <el-button
+                        type="primary"
+                        @click="submitForm()"
+                        style="height:70px;font-size:33px;margin-top:20px;border-radius:15px"
+                    >{{$t('common_login')}}</el-button>
                 </div>
                 <!-- <p class="login-tips">Tips : 。</p> -->
             </el-form>
@@ -219,52 +218,8 @@ export default {
     }
 };
 </script>
-<style>
-.login-wrap .drop-title {
-    height: 40px !important;
-    margin-top: 22px;
-}
-</style>
-<style lang="less" scoped>
-.el-input-group {
-    width: 320px;
-    height: 40px;
-    margin-bottom: 10px;
-}
 
-.ms-login-box {
-    /deep/.el-input--small .el-input__inner {
-        height: 40px !important;
-        line-height: 40px !important;
-        border-radius: 0 20px 20px 0;
-        background: none !important;
-        border: 1px solid #999999;
-        border-left: none;
-        color: white;
-    }
-
-    /deep/.el-input-group__prepend {
-        padding: 0px 20px;
-        border-radius: 20px 0px 0px 20px;
-        background: none !important;
-        border: 1px solid #999999;
-        border-right: none;
-    }
-
-    /deep/input {
-        background-color: rgba(255, 255, 255, 0) !important;
-    }
-
-    /deep/input:-webkit-autofill {
-        transition: background-color 5000s ease-in-out 0s;
-        -webkit-text-fill-color: #fff !important;
-    }
-
-    /deep/input:-webkit-autofill:focus {
-        -webkit-text-fill-color: #333 !important;
-    }
-}
-
+<style lang='less' scoped>
 .inputc {
     /deep/.el-input--small .el-input__inner {
         height: 60px !important;
@@ -273,70 +228,42 @@ export default {
         margin-top: 20px;
     }
 }
-
-.top-menu {
-    position: absolute;
-    height: 56px;
-    width: 100%;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-}
-
 .login-wrap {
     position: relative;
     width: 100%;
     height: 100%;
     background-image: url(../../../public/img/login-bgi.jpg);
-    background-size: cover;
+    background-size: 100%;
 }
-
-.ms-login-box {
-    margin-top: 270px;
-    margin-left: 88px;
-}
-
-.ms-loginto {
-    color: #fff;
-    font-size: 36px;
-}
-
 .ms-title {
     width: 100%;
     line-height: 50px;
-    font-size: 36px;
-    color: #f40064;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
 }
-
 .ms-login {
-    width: 650px;
-    height: 100vh;
-    float: right;
-    background: rgba(26, 26, 29, 0.9);
-    box-shadow: 0px 4px 30px rgba(233, 218, 230, 0.2);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 350px;
+    margin: -190px 0 0 -175px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
-
 .ms-content {
-    padding: 30px 0;
+    padding: 30px 30px;
 }
-
 .login-btn {
-    // text-align: center;
+    text-align: center;
 }
-
 .login-btn button {
-    width: 320px;
-    height: 40px;
-    line-height: 26px;
+    width: 100%;
+    height: 36px;
     margin-bottom: 10px;
-    border-radius: 20px;
-    background: linear-gradient(326.82deg, #ff2472 -5.17%, #ff5f61 85.53%);
-    box-shadow: 3px 3px 10px rgba(225, 4, 83, 0.3);
-    border: none;
 }
-
 .login-tips {
     font-size: 12px;
     line-height: 30px;
