@@ -1,7 +1,8 @@
 <template>
     <div class="tags" v-if="showTags">
         <ul>
-            <li class="tags-li" v-for="(item, index) in tagsList" :class="{ 'active': isActive(item.path) }" :key="index">
+            <li class="tags-li" v-for="(item, index) in tagsList" :class="{ 'active': isActive(item.path) }"
+                :key="index">
                 <router-link :to="item.path" class="tags-li-title">
                     {{ item.title }}
                 </router-link>
@@ -10,7 +11,7 @@
         </ul>
         <div class="tags-close-box">
             <el-dropdown @command="handleTags">
-                <el-button size="mini" style="border:none;background:#282829;color: rgba(255, 255, 255, 0.9);">
+                <el-button size="mini">
                     标签选项<i class="el-icon-arrow-down el-icon--right"></i>
                 </el-button>
                 <el-dropdown-menu size="small" slot="dropdown">
@@ -128,12 +129,11 @@ export default {
 <style>
 .tags {
     position: relative;
-    height: 32px;
+    height: 30px;
     overflow: hidden;
-    background: #282829;
+    background: #fff;
     padding-right: 120px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.04);
-    border-top: 2px solid black;
+    box-shadow: 0 5px 10px #ddd;
 }
 
 .tags ul {
@@ -144,8 +144,7 @@ export default {
 
 .tags-li {
     float: left;
-    /* margin: 12px 5px 2px 3px; */
-    margin-left: 3px;
+    margin: 3px 5px 2px 3px;
     border-radius: 3px;
     font-size: 12px;
     overflow: hidden;
@@ -153,49 +152,45 @@ export default {
     height: 23px;
     line-height: 23px;
     border: 1px solid #e9eaec;
-    background: #111111;
+    background: #fff;
     padding: 0 5px 0 12px;
     vertical-align: middle;
-    color: rgba(255, 255, 255, 0.6);
+    color: #666;
     -webkit-transition: all .3s ease-in;
     -moz-transition: all .3s ease-in;
     transition: all .3s ease-in;
-    /* width: 90px; */
-    height: 28px;
-    border-radius: 10px;
-    text-align: center;
-    border: none;
 }
 
 .tags-li:not(.active):hover {
-    background: #74686B;
-    color: #409EFF
+    background: #f8f8f8;
 }
 
-.tags-li:hover>.tags-li-title {
-    color: #ffffff;
+.tags-li.active {
+    color: #fff;
 }
 
+.tags-li-title {
+    float: left;
+    max-width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 5px;
+    color: #666;
+}
 
 .tags-li.active .tags-li-title {
     color: #fff;
 }
 
-.el-icon-close {
-    line-height: 2.5;
-}
-
 .tags-close-box {
     position: absolute;
     right: 0;
-    top: 0px;
+    top: 0;
     box-sizing: border-box;
     padding-top: 1px;
     text-align: center;
-    width: 110px;
-    height: 30px;
-    background: #282829;
-    box-shadow: -3px 0 15px 3px rgba(0, 0, 0, .1);
+    background: #fff;
     z-index: 10;
 }
 </style>

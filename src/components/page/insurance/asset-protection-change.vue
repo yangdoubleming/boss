@@ -133,7 +133,7 @@
                         </el-table-column>
                     </el-table>
                     <a href="javascript:void(0)" @click="addInput" style="
-                color: #e71d5d;
+                color: #409EFF;
                 margin-top: 10px;
                 margin-left: 50px;
                 font-size: 14px;

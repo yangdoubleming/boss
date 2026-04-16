@@ -546,8 +546,8 @@ export default {
 
         a {
             padding: 5px 20px;
-            border: 1px solid #e71d5d;
-            color: #e71d5d;
+            border: 1px solid #409EFF;
+            color: #409EFF;
             font-size: 13px;
         }
 
@@ -556,9 +556,9 @@ export default {
         }
 
         .addclass {
-            background-color: #e71d5d;
+            background-color: #409EFF;
             color: #fff;
-            border: 1px solid #e71d5d;
+            border: 1px solid #409EFF;
         }
     }
 

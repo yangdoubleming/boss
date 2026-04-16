@@ -47,7 +47,7 @@
                     <div class="left">
                         保险返佣Top10
                         <el-button
-                            style="margin-left: 20px; border-color: #e71d5d; border-radius: 10px; color: #e71d5d; padding: 5px 20px"
+                            style="margin-left: 20px; border-color: #409EFF; border-radius: 10px; color: #409EFF; padding: 5px 20px"
                             @click="$router.push('/insure-rebate')"
                             >更多排行榜</el-button
                         >
@@ -708,7 +708,7 @@ export default {
     .two {
         /deep/.el-table__row {
             td:nth-child(5) {
-                color: #e71d5d;
+                color: #409EFF;
             }
         }
     }

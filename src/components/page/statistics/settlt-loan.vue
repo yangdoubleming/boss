@@ -9,7 +9,7 @@
             </div>
             <span style="color: rgba(0, 0, 0, 0.65); font-size: 14px; padding-left: 5px">{{ $route.meta.title }}</span>
             <div style="width: 70%; text-align: right">
-                <el-button style="padding: 8px 40px; font-size: 14px; color: #e71d5d; border-color: #e71d5d"
+                <el-button style="padding: 8px 40px; font-size: 14px; color: #409EFF; border-color: #409EFF"
                     @click="back">返回</el-button>
             </div>
         </div>

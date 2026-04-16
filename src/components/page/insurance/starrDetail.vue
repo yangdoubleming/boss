@@ -16,9 +16,9 @@
         <div class="top">
             <div class="left" style="line-height: 40px">
                 订单编号
-                <span style="margin: 0 15px; color: #e71d5d">{{ key }}</span>
+                <span style="margin: 0 15px; color: #409EFF">{{ key }}</span>
                 保费
-                <span style="margin: 0 15px; color: #e71d5d">{{ detailData.totalPremiumUSD }}美元（ {{
+                <span style="margin: 0 15px; color: #409EFF">{{ detailData.totalPremiumUSD }}美元（ {{
                     detailData.totalPremium }}{{ $t('common_yuan2') }}）</span>
                 <el-button v-if="status == '已付款'" class="green">{{ status }}</el-button>
                 <el-button v-if="status == '已生效'" class="green">{{ status }}</el-button>
@@ -30,13 +30,13 @@
                     }}{{ detailData.declinedRemark }}</span>
             </div>
             <div class="right">
-                <el-button @click="certificate" style="border: 2px solid #e71d5d; font-weight: 700">保险凭证</el-button>
+                <el-button @click="certificate" style="border: 2px solid #409EFF; font-weight: 700">保险凭证</el-button>
                 <el-button @click="ChinesePolicy">中文保单</el-button>
                 <el-button @click="EnglishPolicy">英文保单</el-button>
             </div>
         </div>
         <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" background-color="#fff"
-            text-color="#000" active-text-color="#e71d5d">
+            text-color="#000" active-text-color="#409EFF">
             <el-menu-item index="1">{{ $t('loan_detail_gl') }}</el-menu-item>
         </el-menu>
         <div class="contentC">
@@ -46,7 +46,7 @@
                     <el-row>
                         <el-col :span="12">
                             <div class="a">保单号</div>
-                            <div class="p" style="color: #e71d5d">{{ detailData.policyNumber ? detailData.policyNumber :
+                            <div class="p" style="color: #409EFF">{{ detailData.policyNumber ? detailData.policyNumber :
                     '-' }}</div>
                         </el-col>
                         <el-col :span="11" :offset="1">
@@ -79,7 +79,7 @@
                     <el-row>
                         <el-col :span="12">
                             <div class="a">保费</div>
-                            <div class="p" style="color: #e71d5d">
+                            <div class="p" style="color: #409EFF">
                                 {{ detailData.totalPremiumUSD }}美元（{{ detailData.totalPremium }}{{ $t('common_yuan2')
                                 }}）
                             </div>
@@ -416,8 +416,8 @@ export default {
 
         .right {
             .el-button {
-                border: 1px solid #e71d5d;
-                color: #e71d5d;
+                border: 1px solid #409EFF;
+                color: #409EFF;
                 padding: 10px 20px;
             }
         }

@@ -7,7 +7,7 @@
                 <span style="color: rgba(0, 0, 0, 0.65); font-size: 14px; padding-left: 5px">保险返佣排行榜</span>
             </div>
             <div style="width: 70%; text-align: right">
-                <el-button style="padding: 5px 35px; font-size: 14px; color: #e71d5d; border-color: #e71d5d" @click="$router.go(-1)"
+                <el-button style="padding: 5px 35px; font-size: 14px; color: #409EFF; border-color: #409EFF" @click="$router.go(-1)"
                     >返回</el-button
                 >
             </div>
@@ -172,7 +172,7 @@ export default {
             font-weight: 700;
         }
         td:nth-child(5) {
-            color: #e71d5d;
+            color: #409EFF;
         }
     }
 }

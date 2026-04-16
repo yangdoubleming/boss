@@ -434,8 +434,8 @@ export default {
 
         .addclass {
             background-color: #fff;
-            color: #e71d5d;
-            border: 1px solid #e71d5d;
+            color: #409EFF;
+            border: 1px solid #409EFF;
         }
     }
 
@@ -450,8 +450,8 @@ export default {
         }
 
         .el-button:nth-child(2) {
-            border: 1px solid #e71d5d;
-            color: #e71d5d;
+            border: 1px solid #409EFF;
+            color: #409EFF;
         }
     }
 
