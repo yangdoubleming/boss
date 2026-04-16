@@ -1,6 +1,5 @@
 const en = {
     //公共
-    common_dsb: 'Dowsure',
     common_yuan: '(RMB)',
     common_yuan2: 'yuan',
     common_see: 'Details',
