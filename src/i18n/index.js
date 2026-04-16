@@ -24,7 +24,7 @@ const messages = {
 // 创建国际化实例
 const i18n = new VueI18n({
     // 设置默认语言
-    locale:sessionStorage.getItem('locale') || 'en',
+    locale: 'zh' || sessionStorage.getItem('locale'),
     messages,
 })
 export default i18n
