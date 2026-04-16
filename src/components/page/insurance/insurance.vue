@@ -208,7 +208,7 @@
                 </el-form-item>
             </el-form>
             <span slot="footer" class="dialog-footer">
-                <el-button @click="cancle" style="margin-right: 15px; color: #fe1964; border-color: #fe1964">取 消
+                <el-button @click="cancle" style="margin-right: 15px; color: #409EFF; border-color: #409EFF">取 消
                 </el-button>
                 <el-button type="primary" @click="sureUpload" v-loading="showUpLoading">确 定</el-button>
             </span>
@@ -230,7 +230,7 @@
                 </el-form-item>
             </el-form>
             <span slot="footer" class="dialog-footer">
-                <el-button @click="canclePolicy" style="margin-right: 15px; color: #fe1964; border-color: #fe1964">取 消
+                <el-button @click="canclePolicy" style="margin-right: 15px; color: #409EFF; border-color: #409EFF">取 消
                 </el-button>
                 <el-button type="primary" @click="sureUploadPolicy" :disabled="disabledPolicy">确 定</el-button>
             </span>
@@ -267,7 +267,7 @@
             </el-form>
             <span slot="footer" class="dialog-footer">
                 <el-button @click="(dialogVisibleEdit = false)"
-                    style="margin-right: 15px; color: #fe1964; border-color: #fe1964">取 消</el-button>
+                    style="margin-right: 15px; color: #409EFF; border-color: #409EFF">取 消</el-button>
                 <el-button type="primary" @click="saveEdit">保 存</el-button>
             </span>
         </el-dialog>
@@ -984,7 +984,7 @@ export default {
     /deep/.el-table__row {
         td:nth-child(1) {
             .cell {
-                color: #fe1964;
+                color: #409EFF;
             }
         }
     }
@@ -1013,11 +1013,11 @@ export default {
         }
 
         /deep/.el-upload-list__item-name {
-            color: #fe1964;
+            color: #409EFF;
         }
 
         /deep/.el-icon-document {
-            color: #fe1964;
+            color: #409EFF;
         }
     }
 
@@ -1028,7 +1028,7 @@ export default {
 
         .el-button {
             padding: 5px 20px;
-            color: #fe1964;
+            color: #409EFF;
             background-color: #fff;
         }
     }

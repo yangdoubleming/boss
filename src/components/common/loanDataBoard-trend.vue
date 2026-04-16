@@ -87,7 +87,7 @@
                                     border
                                     @change="_changeOptionSelect(1)"
                                     size="medium"
-                                    :style="{ borderRight: lenderCreaditType == 1 ? '1px solid #FE1964' : 'none' }"
+                                    :style="{ borderRight: lenderCreaditType == 1 ? '1px solid #409EFF' : 'none' }"
                                 >
                                     <img
                                         v-if="lenderCreaditType == 1"
@@ -179,7 +179,7 @@
                                     border
                                     @change="_changeOptionSelect(2)"
                                     size="medium"
-                                    :style="{ borderRight: productCreaditType == 1 ? '1px solid #FE1964' : 'none' }"
+                                    :style="{ borderRight: productCreaditType == 1 ? '1px solid #409EFF' : 'none' }"
                                 >
                                     <img
                                         v-if="productCreaditType == 1"
@@ -271,7 +271,7 @@
                                     border
                                     @change="_changeOptionSelect(3)"
                                     size="medium"
-                                    :style="{ borderRight: paymentCreaditType == 1 ? '1px solid #FE1964' : 'none' }"
+                                    :style="{ borderRight: paymentCreaditType == 1 ? '1px solid #409EFF' : 'none' }"
                                 >
                                     <img
                                         v-if="paymentCreaditType == 1"
@@ -362,7 +362,7 @@
                                     label="1"
                                     border
                                     size="medium"
-                                    :style="{ borderRight: lenderLoanType == 1 ? '1px solid #FE1964' : 'none' }"
+                                    :style="{ borderRight: lenderLoanType == 1 ? '1px solid #409EFF' : 'none' }"
                                     @change="_changeOptionSelect(4)"
                                 >
                                     <img v-if="lenderLoanType == 1" src="../../assets/bar.png" alt />
@@ -447,7 +447,7 @@
                                     border
                                     @change="_changeOptionSelect(5)"
                                     size="medium"
-                                    :style="{ borderRight: productLoanType == 1 ? '1px solid #FE1964' : 'none' }"
+                                    :style="{ borderRight: productLoanType == 1 ? '1px solid #409EFF' : 'none' }"
                                 >
                                     <img v-if="productLoanType == 1" src="../../assets/bar.png" alt />
                                     <img v-else src="../../assets/bar2.png" alt />
@@ -531,7 +531,7 @@
                                     border
                                     @change="_changeOptionSelect(6)"
                                     size="medium"
-                                    :style="{ borderRight: paymentLoanType == 1 ? '1px solid #FE1964' : 'none' }"
+                                    :style="{ borderRight: paymentLoanType == 1 ? '1px solid #409EFF' : 'none' }"
                                 >
                                     <img v-if="paymentLoanType == 1" src="../../assets/bar.png" alt />
                                     <img v-else src="../../assets/bar2.png" alt />
@@ -615,7 +615,7 @@
                                     border
                                     @change="_changeOptionSelect(7)"
                                     size="medium"
-                                    :style="{ borderRight: lenderLoanSumType == 1 ? '1px solid #FE1964' : 'none' }"
+                                    :style="{ borderRight: lenderLoanSumType == 1 ? '1px solid #409EFF' : 'none' }"
                                 >
                                     <img
                                         v-if="lenderLoanSumType == 1"
@@ -707,7 +707,7 @@
                                     border
                                     @change="_changeOptionSelect(8)"
                                     size="medium"
-                                    :style="{ borderRight: productLoanSumType == 1 ? '1px solid #FE1964' : 'none' }"
+                                    :style="{ borderRight: productLoanSumType == 1 ? '1px solid #409EFF' : 'none' }"
                                 >
                                     <img
                                         v-if="productLoanSumType == 1"
@@ -799,7 +799,7 @@
                                     border
                                     @change="_changeOptionSelect(9)"
                                     size="medium"
-                                    :style="{ borderRight: paymentLoanSumType == 1 ? '1px solid #FE1964' : 'none' }"
+                                    :style="{ borderRight: paymentLoanSumType == 1 ? '1px solid #409EFF' : 'none' }"
                                 >
                                     <img
                                         v-if="paymentLoanSumType == 1"

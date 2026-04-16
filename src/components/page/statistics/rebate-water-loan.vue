@@ -66,7 +66,7 @@
                         </el-row>
                         <div class="button" style=" margin-top: 25px">
                             <el-button type="primary" @click="searchData">搜索</el-button>
-                            <el-button @click="reset" style="border: 1px solid #fe1964; color: #fe1964">重置</el-button>
+                            <el-button @click="reset" style="border: 1px solid #409EFF; color: #409EFF">重置</el-button>
                             <el-button @click="exportDetail" type="primary" style="width: 110px">导出返佣明细</el-button>
                         </div>
                     </el-form>
@@ -110,10 +110,10 @@
                     <el-table-column prop="action" label="操作" align="center" width="280px" fixed="right">
                         <template slot-scope="scope">
                             <div v-if="scope.row.dataStatus == '待审批'">
-                                <a  style="color: #fe1964; cursor: pointer; margin-right: 20px" @click="updateCommissionRate(scope.row)">返佣系数修改</a>
+                                <a  style="color: #409EFF; cursor: pointer; margin-right: 20px" @click="updateCommissionRate(scope.row)">返佣系数修改</a>
                                 <a @click="ensurePass(scope.row)"
-                                    style="color: #fe1964; cursor: pointer; margin-right: 20px">审批通过</a>
-                                <a @click="ensureRefuse(scope.row)" style="color: #fe1964; cursor: pointer">审核拒绝</a>
+                                    style="color: #409EFF; cursor: pointer; margin-right: 20px">审批通过</a>
+                                <a @click="ensureRefuse(scope.row)" style="color: #409EFF; cursor: pointer">审核拒绝</a>
                             </div>
                             <span v-else>--</span>
                         </template></el-table-column>
@@ -405,13 +405,13 @@ export default {
     /deep/.el-table__row {
         td:nth-child(8) {
             .cell {
-                color: #fe1964;
+                color: #409EFF;
             }
         }
 
         // td:nth-child(3) {
         //     .cell {
-        //         color: #fe1964;
+        //         color: #409EFF;
         //     }
         // }
     }

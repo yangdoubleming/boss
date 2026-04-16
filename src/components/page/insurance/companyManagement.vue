@@ -20,7 +20,7 @@
                             <el-button type="primary" @click="searchData"
                                 style="width: 90px; height: 35px">搜索</el-button>
                             <el-button @click="reset"
-                                style="margin-left: 20px; border: 1px solid #fe1964; color: #fe1964; width: 90px; height: 35px">重置</el-button>
+                                style="margin-left: 20px; border: 1px solid #409EFF; color: #409EFF; width: 90px; height: 35px">重置</el-button>
                             <el-button type="primary" @click="addInfo"
                                 style="margin-left: 20px; width: 90px; height: 35px">新增</el-button>
                         </el-row>
@@ -46,8 +46,8 @@
                     <el-table-column prop="action" label="操作" align="center">
                         <template slot-scope="scope">
                             <a @click="redact(scope.row)"
-                                style="color: #fe1964; cursor: pointer; margin-right: 15px">编辑</a>
-                            <a @click="detail(scope.row)" style="color: #fe1964; cursor: pointer">详情</a>
+                                style="color: #409EFF; cursor: pointer; margin-right: 15px">编辑</a>
+                            <a @click="detail(scope.row)" style="color: #409EFF; cursor: pointer">详情</a>
                         </template>
                     </el-table-column>
                 </el-table>
@@ -106,7 +106,7 @@
             </el-form>
             <span slot="footer" class="dialog-footer">
                 <el-button @click="(dialogVisible = false), (fileList = []), (fileList1 = []), (fileList2 = [])"
-                    style="margin-right: 15px; color: #fe1964; border-color: #fe1964">取 消</el-button>
+                    style="margin-right: 15px; color: #409EFF; border-color: #409EFF">取 消</el-button>
                 <el-button type="primary" @click="uploadData" :disabled="disable">保 存</el-button>
             </span>
         </el-dialog>
@@ -608,11 +608,11 @@ export default {
         }
 
         /deep/.el-upload-list__item-name {
-            color: #fe1964;
+            color: #409EFF;
         }
 
         /deep/.el-icon-document {
-            color: #fe1964;
+            color: #409EFF;
         }
     }
 
@@ -624,7 +624,7 @@ export default {
 
         .el-button {
             padding: 5px 22px;
-            color: #fe1964;
+            color: #409EFF;
             background-color: #fff;
         }
     }
@@ -646,7 +646,7 @@ export default {
 
 /deep/.el-table__row {
     td:nth-child(2) {
-        color: #fe1964;
+        color: #409EFF;
     }
 }
 </style>

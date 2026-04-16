@@ -184,38 +184,38 @@ export default {
                 {
                     label: this.$t('loan_sqdh'),
                     prop: 'applicationCode',
-                    color: '#fe1964',
+                    color: '#409EFF',
                     width: 230
                 },
 
                 {
                     label: this.$t('loan_search_zhucename'),
                     prop: 'realName',
-                    color: '#fe1964',
+                    color: '#409EFF',
                     width: 150
                 },
                 {
                     label: this.$t('loan_search_zhucephone'),
                     prop: 'account',
-                    color: '#fe1964',
+                    color: '#409EFF',
                     width: 150
                 },
                 {
                     label: this.$t('loan_search_jkrxm'),
                     prop: 'bName',
-                    color: '#fe1964',
+                    color: '#409EFF',
                     width: 150
                 },
                 {
                     label: this.$t('loan_search_jkrsjh'),
                     prop: 'bPhoneNumber',
-                    color: '#fe1964',
+                    color: '#409EFF',
                     width: 150
                 },
                 {
                     label: this.$t('home_zjffb'),
                     prop: 'lenderName',
-                    color: '#fe1964',
+                    color: '#409EFF',
                     width: 150
                 },
 

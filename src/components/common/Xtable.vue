@@ -201,7 +201,7 @@
                             @click="onPreview(scope.row[item.imgs])"
                         ></el-image>
                         <div
-                            :style="{ color: scope.row.colorStyle && item.prop == 'difference' ? '#fe1964' : '' }"
+                            :style="{ color: scope.row.colorStyle && item.prop == 'difference' ? '#409EFF' : '' }"
                             v-else-if="item.cellEdit === 'repayment'"
                             style="font-size: 14px; text-align: center; padding: 10px 0; line-height: 16px"
                         >
@@ -490,7 +490,7 @@ export default {
 
 <style lang="less" scoped>
 //   /deep/.el-table tr:hover {
-//     background: #fe1964 !important;
+//     background: #409EFF !important;
 //   }
 /deep/.el-table tr:hover > td {
     // background-color: rgb(255, 230, 234) !important;

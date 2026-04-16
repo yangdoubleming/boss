@@ -98,7 +98,7 @@
                         </el-row>
                         <div class="button" style="margin-top: 20px">
                             <el-button type="primary" @click="searchData">搜索</el-button>
-                            <el-button @click="reset" style="border: 1px solid #fe1964; color: #fe1964">重置</el-button>
+                            <el-button @click="reset" style="border: 1px solid #409EFF; color: #409EFF">重置</el-button>
                             <el-button type="primary" @click="exportExcel" style="margin-left: 10px" :disabled="disabled">导出</el-button>
                         </div>
                     </el-form>
@@ -144,7 +144,7 @@
                     <el-table-column prop="agentNum" label="代理数" align="center">
                         <template slot-scope="scope">
                             <el-tooltip class="item" effect="light" content="点击查看代理详情" placement="top">
-                                <a @click="clickNum(scope.row)" style="color: #fe1964; cursor: pointer">{{ scope.row.agentNum }}</a>
+                                <a @click="clickNum(scope.row)" style="color: #409EFF; cursor: pointer">{{ scope.row.agentNum }}</a>
                             </el-tooltip>
                         </template>
                     </el-table-column>
@@ -163,13 +163,13 @@
                     ></el-table-column> -->
                     <el-table-column prop="action" label="操作" align="center" width="200px" fixed="right">
                         <template slot-scope="scope">
-                            <a @click="rebateDetail(scope.row)" style="color: #fe1964; cursor: pointer; margin-right: 30px">返佣明细</a>
-                            <a @click="loanJump(scope.row)" style="color: #fe1964; cursor: pointer; margin-right: 30px">贷款客户</a>
-                            <a @click="alterLevel(scope.row)" style="color: #fe1964; cursor: pointer">等级修改</a>
+                            <a @click="rebateDetail(scope.row)" style="color: #409EFF; cursor: pointer; margin-right: 30px">返佣明细</a>
+                            <a @click="loanJump(scope.row)" style="color: #409EFF; cursor: pointer; margin-right: 30px">贷款客户</a>
+                            <a @click="alterLevel(scope.row)" style="color: #409EFF; cursor: pointer">等级修改</a>
 
                             <!-- <a
                                 @click="dialogVisible = true"
-                                style="color: #fe1964; cursor: pointer"
+                                style="color: #409EFF; cursor: pointer"
                                 v-if="scope.row.userRegisterTypeName === '贷款'"
                                 >关联新客户</a
                             > -->
@@ -204,11 +204,11 @@
                 </el-form>
             </div>
             <span slot="footer" class="dialog-footer">
-                <el-button @click="dialogVisible = false" style="width: 100px; color: #fe1964; margin-right: 40px; border-color: #fe1964"
+                <el-button @click="dialogVisible = false" style="width: 100px; color: #409EFF; margin-right: 40px; border-color: #409EFF"
                     >取 消</el-button
                 >
                 <el-button type="primary" @click="_relevance" style="width: 100px">确 定</el-button>
-                <div style="margin-top: 30px; color: #fe1964; font-size: 15px">
+                <div style="margin-top: 30px; color: #409EFF; font-size: 15px">
                     *点击确定后此客户贷款的返佣将划扣到当前合伙人下，请谨慎操作。
                 </div>
             </span>
@@ -644,19 +644,19 @@ export default {
 
         td:nth-child(8) {
             .cell {
-                color: #fe1964;
+                color: #409EFF;
             }
         }
 
         td:nth-child(10) {
             .cell {
-                color: #fe1964;
+                color: #409EFF;
             }
         }
 
         // td:nth-child(3) {
         //     .cell {
-        //         color: #fe1964;
+        //         color: #409EFF;
         //     }
         // }
     }

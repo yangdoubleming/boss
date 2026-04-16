@@ -29,7 +29,7 @@
                 <el-card shadow="hover" :body-style="{ padding: '0px', height: '60px' }">
                     <div class="grid-content grid-con-1" style="display: flex">
                         <el-menu :default-active="activeIndex" class="el-menu-demo" style="width: 92%" mode="horizontal"
-                            @select="handleSelect" active-text-color="#fe1964">
+                            @select="handleSelect" active-text-color="#409EFF">
                             <el-menu-item index="1">{{ $t('loan_detail_gl') }}</el-menu-item>
                             <el-menu-item index="2">{{ $t('loan_detail_sqxx') }}</el-menu-item>
                             <el-menu-item index="5">{{ $t('loan_detail_dpxx') }}</el-menu-item>
@@ -713,7 +713,7 @@ export default {
 
         .grid-num3 {
             font-size: 28px;
-            color: #fe1964;
+            color: #409EFF;
             padding-left: 25px;
         }
 

@@ -31,7 +31,7 @@ export default {
 @import '../public/css/color-dark.css';
 ::selection {
     color: #fff;
-    background: #fe1964;
+    background: #409EFF;
 }
 /* 谷歌 */
 input::-webkit-outer-spin-button,

@@ -213,7 +213,7 @@
                             <div style="display:flex;">
                                 <el-radio class="echarts-radio1" v-model="lenderCreaditType" label="1" border
                                     @change="_changeOptionSelect(13)" size="medium"
-                                    :style="{ borderRight: lenderCreaditType == 1 ? '1px solid #FE1964' : 'none' }">
+                                    :style="{ borderRight: lenderCreaditType == 1 ? '1px solid #409EFF' : 'none' }">
                                     <img v-if="lenderCreaditType == 1" src="../../../assets/bar.png" alt />
                                     <img v-else src="../../../assets/bar2.png" alt />
                                     {{ $t('home_zzt') }}
@@ -268,7 +268,7 @@
                             <div style="display:flex;">
                                 <el-radio class="echarts-radio1" v-model="productCreaditType" label="1" border
                                     @change="_changeOptionSelect(14)" size="medium"
-                                    :style="{ borderRight: productCreaditType == 1 ? '1px solid #FE1964' : 'none' }">
+                                    :style="{ borderRight: productCreaditType == 1 ? '1px solid #409EFF' : 'none' }">
                                     <img v-if="productCreaditType == 1" src="../../../assets/bar.png" alt />
                                     <img v-else src="../../../assets/bar2.png" alt />
                                     {{ $t('home_zzt') }}
@@ -324,7 +324,7 @@
                             <div style="display:flex;">
                                 <el-radio class="echarts-radio1" v-model="paymentCreaditType" label="1" border
                                     @change="_changeOptionSelect(15)" size="medium"
-                                    :style="{ borderRight: paymentCreaditType == 1 ? '1px solid #FE1964' : 'none' }">
+                                    :style="{ borderRight: paymentCreaditType == 1 ? '1px solid #409EFF' : 'none' }">
                                     <img v-if="paymentCreaditType == 1" src="../../../assets/bar.png" alt />
                                     <img v-else src="../../../assets/bar2.png" alt />
                                     {{ $t('home_zzt') }}
@@ -379,7 +379,7 @@
                             <div style="display:flex;">
                                 <el-radio class="echarts-radio1" v-model="lenderLoanType" label="1" border size="medium"
                                     @change="_changeOptionSelect(4)"
-                                    :style="{ borderRight: lenderLoanType == 1 ? '1px solid #FE1964' : 'none' }">
+                                    :style="{ borderRight: lenderLoanType == 1 ? '1px solid #409EFF' : 'none' }">
                                     <img v-if="lenderLoanType == 1" src="../../../assets/bar.png" alt />
                                     <img v-else src="../../../assets/bar2.png" alt />
                                     {{ $t('home_zzt') }}
@@ -435,7 +435,7 @@
                             <div style="display:flex;">
                                 <el-radio class="echarts-radio1" v-model="productLoanType" label="1" border
                                     @change="_changeOptionSelect(6)" size="medium"
-                                    :style="{ borderRight: productLoanType == 1 ? '1px solid #FE1964' : 'none' }">
+                                    :style="{ borderRight: productLoanType == 1 ? '1px solid #409EFF' : 'none' }">
                                     <img v-if="productLoanType == 1" src="../../../assets/bar.png" alt />
                                     <img v-else src="../../../assets/bar2.png" alt />
                                     {{ $t('home_zzt') }}
@@ -491,7 +491,7 @@
                             <div style="display:flex;">
                                 <el-radio class="echarts-radio1" v-model="paymentLoanType" label="1" border
                                     @change="_changeOptionSelect(12)" size="medium"
-                                    :style="{ borderRight: paymentLoanType == 1 ? '1px solid #FE1964' : 'none' }">
+                                    :style="{ borderRight: paymentLoanType == 1 ? '1px solid #409EFF' : 'none' }">
                                     <img v-if="paymentLoanType == 1" src="../../../assets/bar.png" alt />
                                     <img v-else src="../../../assets/bar2.png" alt />
                                     {{ $t('home_zzt') }}
@@ -547,7 +547,7 @@
                             <div style="display:flex;">
                                 <el-radio class="echarts-radio1" v-model="lenderSumType" label="1" border size="medium"
                                     @change="_changeOptionSelect(16)"
-                                    :style="{ borderRight: lenderSumType == 1 ? '1px solid #FE1964' : 'none' }">
+                                    :style="{ borderRight: lenderSumType == 1 ? '1px solid #409EFF' : 'none' }">
                                     <img v-if="lenderSumType == 1" src="../../../assets/bar.png" alt />
                                     <img v-else src="../../../assets/bar2.png" alt />
                                     {{ $t('home_zzt') }}
@@ -602,7 +602,7 @@
                             <div style="display:flex;">
                                 <el-radio class="echarts-radio1" v-model="productSumType" label="1" border size="medium"
                                     @change="_changeOptionSelect(17)"
-                                    :style="{ borderRight: productSumType == 1 ? '1px solid #FE1964' : 'none' }">
+                                    :style="{ borderRight: productSumType == 1 ? '1px solid #409EFF' : 'none' }">
                                     <img v-if="productSumType == 1" src="../../../assets/bar.png" alt />
                                     <img v-else src="../../../assets/bar2.png" alt />
                                     {{ $t('home_zzt') }}
@@ -658,7 +658,7 @@
                             <div style="display:flex;">
                                 <el-radio class="echarts-radio1" v-model="paymentSumType" label="1" border size="medium"
                                     @change="_changeOptionSelect(18)"
-                                    :style="{ borderRight: paymentSumType == 1 ? '1px solid #FE1964' : 'none' }">
+                                    :style="{ borderRight: paymentSumType == 1 ? '1px solid #409EFF' : 'none' }">
                                     <img v-if="paymentSumType == 1" src="../../../assets/bar.png" alt />
                                     <img v-else src="../../../assets/bar2.png" alt />
                                     {{ $t('home_zzt') }}

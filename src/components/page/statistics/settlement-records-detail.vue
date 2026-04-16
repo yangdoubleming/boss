@@ -42,7 +42,7 @@
             <div style="margin-bottom: 20px; font-weight: 700; color: #666; font-size: 15px; display: flex">
                 合伙人结算记录
                 <span style="font-weight: normal; color: #000; margin-left: 20px">【当前{{ scope.userParentType }}：
-                    <span style="color: #fe1964">{{ scope.userName }}&nbsp;&nbsp;{{ scope.userIphone }}</span>】</span>
+                    <span style="color: #409EFF">{{ scope.userName }}&nbsp;&nbsp;{{ scope.userIphone }}</span>】</span>
                 <div style="width: 70%; text-align: right">已结算总金额：{{ accounData.settlementAmount
                     }}{{ $t('common_yuan2') }}</div>
             </div>
@@ -71,10 +71,10 @@
                     </el-input>
                 </el-form-item>
             </el-form>
-            <div style="color: #fe1964; font-size: 15px">*点击确定表示您已线下结算佣金给合伙人，请谨慎操作。</div>
+            <div style="color: #409EFF; font-size: 15px">*点击确定表示您已线下结算佣金给合伙人，请谨慎操作。</div>
             <span slot="footer" class="dialog-footer">
                 <el-button @click="dialogVisible = false"
-                    style="padding: 8px 25px; border-color: #fe1964; color: #fe1964">取
+                    style="padding: 8px 25px; border-color: #409EFF; color: #409EFF">取
                     消</el-button>
                 <el-button type="primary" @click="closeAccount" style="padding: 8px 25px">确 定</el-button>
             </span>
@@ -238,13 +238,13 @@ export default {
     /deep/.el-table__row {
         td:nth-child(1) {
             .cell {
-                color: #fe1964;
+                color: #409EFF;
             }
         }
 
         // td:nth-child(3) {
         //     .cell {
-        //         color: #fe1964;
+        //         color: #409EFF;
         //     }
         // }
     }

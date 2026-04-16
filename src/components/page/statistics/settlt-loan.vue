@@ -91,13 +91,13 @@ export default {
     /deep/.el-table__row {
         td:nth-child(3) {
             .cell {
-                color: #fe1964;
+                color: #409EFF;
             }
         }
 
         // td:nth-child(3) {
         //     .cell {
-        //         color: #fe1964;
+        //         color: #409EFF;
         //     }
         // }
     }

@@ -898,7 +898,7 @@ export default {
     }
 
     .tips-icon:hover {
-        color: #fe1964 !important;
+        color: #409EFF !important;
     }
 
     .loaning {

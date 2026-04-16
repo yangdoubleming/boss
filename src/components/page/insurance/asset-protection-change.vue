@@ -364,7 +364,7 @@
                 </el-form-item>
             </el-form>
             <span slot="footer" class="dialog-footer">
-                <el-button @click="cancle" style="margin-right: 15px; color: #fe1964; border-color: #fe1964">取
+                <el-button @click="cancle" style="margin-right: 15px; color: #409EFF; border-color: #409EFF">取
                     消</el-button>
                 <el-button type="primary" @click="sureUpload" :disabled="disabledSuer"
                     style="background: linear-gradient(to top right, #e10453, #ff575a)">确 定</el-button>
@@ -467,43 +467,43 @@ export default {
                 {
                     label: '保单号',
                     prop: 'policyNum',
-                    color: '#fe1964',
+                    color: '#409EFF',
                     width: 230
                 },
                 {
                     label: '保险公司',
                     prop: 'comanyName',
-                    color: '#fe1964',
+                    color: '#409EFF',
                     width: 250
                 },
                 {
                     label: '被保企业名称（中文）',
                     prop: 'insName',
-                    color: '#fe1964',
+                    color: '#409EFF',
                     width: 250
                 },
                 {
                     label: '保险起期',
                     prop: 'policyStatr',
-                    color: '#fe1964',
+                    color: '#409EFF',
                     width: 150
                 },
                 {
                     label: '保险止期',
                     prop: 'policyEndTime',
-                    color: '#fe1964',
+                    color: '#409EFF',
                     width: 150
                 },
                 {
                     label: '保单状态',
                     prop: 'policyStatus',
-                    color: '#fe1964',
+                    color: '#409EFF',
                     width: 200
                 },
                 {
                     label: '批改状态',
                     prop: 'updateStatus',
-                    color: '#fe1964',
+                    color: '#409EFF',
                     width: '120'
                 },
                 {

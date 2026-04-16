@@ -169,7 +169,7 @@ export default {
 
 .tags-li:not(.active):hover {
     background: #74686B;
-    color: #F40064
+    color: #409EFF
 }
 
 .tags-li:hover>.tags-li-title {

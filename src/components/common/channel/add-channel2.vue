@@ -300,7 +300,7 @@
         <el-dialog title="请牢记并保存" :visible.sync="showPs" width="30%" :modal="false">
             <span>
                 初始登录密码为：
-                <span style="font-weight: 600; color: #fe1964">{{ psw }}</span>
+                <span style="font-weight: 600; color: #409EFF">{{ psw }}</span>
             </span>
 
             <el-button class="onCopy" @click="onCopy" type="primary" plain style="margin-left: 20px">复制账号密码</el-button>

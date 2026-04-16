@@ -33,7 +33,7 @@
 
                             <div class="button">
                                 <el-button type="primary" @click="searchData" style="margin-left: 20px">搜索</el-button>
-                                <el-button @click="reset" style="border: 1px solid #fe1964; color: #fe1964">重置</el-button>
+                                <el-button @click="reset" style="border: 1px solid #409EFF; color: #409EFF">重置</el-button>
                             </div>
                         </el-row>
                     </el-form>

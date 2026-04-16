@@ -53,7 +53,7 @@
 
                         <div class="button">
                             <el-button type="primary" @click="searchData" style="margin-left: 20px">搜索</el-button>
-                            <el-button @click="reset" style="border: 1px solid #fe1964; color: #fe1964">重置</el-button>
+                            <el-button @click="reset" style="border: 1px solid #409EFF; color: #409EFF">重置</el-button>
                         </div>
                     </el-form>
                 </el-card>
@@ -70,7 +70,7 @@
                     <el-table-column prop="platform" label="电商平台" align="center"> </el-table-column>
                     <el-table-column prop="number" label="投保订单数" align="center">
                         <!-- <template slot-scope="scope">
-                            <a @click="handleView(scope.row)" style="color: #fe1964; cursor: pointer">{{ scope.row.number }}</a>
+                            <a @click="handleView(scope.row)" style="color: #409EFF; cursor: pointer">{{ scope.row.number }}</a>
                         </template> -->
                     </el-table-column>
                     <el-table-column prop="amount" label="已付保费" align="center"> </el-table-column>
@@ -220,13 +220,13 @@ export default {
     /deep/.el-table__row {
         td:nth-child(1) {
             .cell {
-                color: #fe1964;
+                color: #409EFF;
             }
         }
 
         // td:nth-child(3) {
         //     .cell {
-        //         color: #fe1964;
+        //         color: #409EFF;
         //     }
         // }
     }

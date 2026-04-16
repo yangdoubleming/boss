@@ -11,7 +11,7 @@
                 <div style="margin:0 15px;margin-left:15px;transition: margin-left .3s;margin-top: 31px;float: left;font-size: 16px;color:white;">保险后台管理系统</div>
         </div>
         <el-menu class="sidebar-el-menu" :default-active="show" :collapse="collapse" background-color="#282829"
-            text-color="rgb(152, 158, 173)" active-text-color="#F40064" unique-opened router @select="handleSelect">
+            text-color="rgb(152, 158, 173)" active-text-color="#409EFF" unique-opened router @select="handleSelect">
             <template v-for="item in menuList">
                 <template v-if="item.childrenPage.length">
                     <el-submenu :index="item.createTime" :key="item.id">
@@ -195,7 +195,7 @@ export default {
 }
 
 .el-menu-item .is-active {
-    /* background-color: #fe1964 !important; */
+    /* background-color: #409EFF !important; */
 }
 
 .sidebar {

@@ -197,7 +197,7 @@ export default {
                 {
                     label: this.$t('loan_search_dkbh'),
                     prop: 'loanCode',
-                    color: '#fe1964',
+                    color: '#409EFF',
                     width: 230,
                     cellEdit: 'click',
                     clickEvent: true

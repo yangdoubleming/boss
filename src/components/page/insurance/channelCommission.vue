@@ -481,7 +481,7 @@ export default {
     /deep/.el-table__row {
         // td:nth-child(1) {
         //     .cell {
-        //         color: #fe1964;
+        //         color: #409EFF;
         //     }
         // }
     }
@@ -510,11 +510,11 @@ export default {
         }
 
         /deep/.el-upload-list__item-name {
-            color: #fe1964;
+            color: #409EFF;
         }
 
         /deep/.el-icon-document {
-            color: #fe1964;
+            color: #409EFF;
         }
     }
 
@@ -525,7 +525,7 @@ export default {
 
         .el-button {
             padding: 5px 20px;
-            color: #fe1964;
+            color: #409EFF;
             background-color: #fff;
         }
     }

@@ -70,7 +70,7 @@
                             <div class="button">
                                 <el-button type="primary" @click="searchData" style="margin-left: 20px">搜索</el-button>
                                 <el-button @click="reset"
-                                    style="border: 1px solid #fe1964; color: #fe1964">重置</el-button>
+                                    style="border: 1px solid #409EFF; color: #409EFF">重置</el-button>
                             </div>
                         </el-row>
 
@@ -102,7 +102,7 @@
             <div style="margin-bottom: 20px; font-size: 15px">
                 <span style="font-weight: 700; margin-right: 20px; color: #666">邀请贷款客户</span>
 
-                <span>【当前{{ content.userParentType }}：<span style="color: #fe1964">{{ content.userName }} {{
+                <span>【当前{{ content.userParentType }}：<span style="color: #409EFF">{{ content.userName }} {{
                     content.userIphone }}</span>】</span>
             </div>
             <el-card shadow="hover" :body-style="{ padding: '0px' }">
@@ -335,13 +335,13 @@ export default {
 
         td:nth-child(6) {
             .cell {
-                color: #fe1964;
+                color: #409EFF;
             }
         }
 
         // td:nth-child(3) {
         //     .cell {
-        //         color: #fe1964;
+        //         color: #409EFF;
         //     }
         // }
     }

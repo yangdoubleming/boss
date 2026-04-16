@@ -17,7 +17,7 @@
                             </div>
                             <div class="button">
                                 <el-button type="primary" @click="searchData">搜索</el-button>
-                                <el-button @click="reset" style="border: 1px solid #fe1964; color: #fe1964">重置</el-button>
+                                <el-button @click="reset" style="border: 1px solid #409EFF; color: #409EFF">重置</el-button>
                                 <el-button type="primary" style="width: 120px;margin: 0 20px" @click="openProvider">添加返佣资方</el-button>
                             </div>
                             </div>
@@ -44,8 +44,8 @@
                                     <el-table-column prop="action" label="操作"  align="left">
                                         <template slot-scope="scope">
                                             <div >
-                                                <a  style="color: #fe1964; cursor: pointer; margin-right: 20px" @click="updateMsg(scope.row,1)">修改</a>
-                                                <a  style="color: #fe1964; cursor: pointer; margin-right: 20px" @click="historyRecord(scope.row)">历史纪录</a>
+                                                <a  style="color: #409EFF; cursor: pointer; margin-right: 20px" @click="updateMsg(scope.row,1)">修改</a>
+                                                <a  style="color: #409EFF; cursor: pointer; margin-right: 20px" @click="historyRecord(scope.row)">历史纪录</a>
                                             </div>
                                         </template></el-table-column>
                                 </el-table>
@@ -104,7 +104,7 @@
                 <el-table-column prop="action" label="操作"  align="left">
                     <template slot-scope="scope">
                         <div  v-if="scope.row.status==='待生效'">
-                            <a  style="color: #fe1964; cursor: pointer; margin-right: 20px" @click="historyRecordMsg(scope.row,2)">修改</a>
+                            <a  style="color: #409EFF; cursor: pointer; margin-right: 20px" @click="historyRecordMsg(scope.row,2)">修改</a>
                         </div>
                     </template></el-table-column>
             </el-table>
@@ -387,7 +387,7 @@ export default {
     /deep/.el-table__row {
         td:nth-child(8) {
             .cell {
-                color: #fe1964;
+                color: #409EFF;
             }
         }
     }

@@ -70,7 +70,7 @@
                                 <div class="button">
                                     <el-button type="primary" @click="searchData" style="margin-left: 20px">搜索
                                     </el-button>
-                                    <el-button @click="reset" style="border: 1px solid #fe1964; color: #fe1964">重置
+                                    <el-button @click="reset" style="border: 1px solid #409EFF; color: #409EFF">重置
                                     </el-button>
                                 </div>
                             </el-row>
@@ -82,7 +82,7 @@
                 <div style="margin-bottom: 20px; font-weight: 700; color: #666; font-size: 15px">
                     合伙人返佣明细列表
                     <span style="font-weight: normal; color: #000; margin-left: 20px">【当前{{ scope.userParentType }}：
-                        <span style="color: #fe1964">{{ scope.userName }}&nbsp;&nbsp;{{ scope.userIphone
+                        <span style="color: #409EFF">{{ scope.userName }}&nbsp;&nbsp;{{ scope.userIphone
                             }}</span>】</span>
                 </div>
                 <el-card shadow="hover" :body-style="{ padding: '0px' }">
@@ -114,7 +114,7 @@
                         <el-table-column prop="createTime" label="返佣时间" align="center" width="100"> </el-table-column>
                         <!-- <el-table-column prop="action" label="操作" align="center" width="180px">
                             <template slot-scope="scope">
-                                <a @click="openRepaymentHistroy(scope.row)" style="color: #fe1964; cursor: pointer; margin-right: 30px"
+                                <a @click="openRepaymentHistroy(scope.row)" style="color: #409EFF; cursor: pointer; margin-right: 30px"
                                     >明细</a
                                 >
                             </template>
@@ -158,7 +158,7 @@
                                 <div class="button">
                                     <el-button type="primary" @click="searchData" style="margin-left: 20px">搜索
                                     </el-button>
-                                    <el-button @click="reset" style="border: 1px solid #fe1964; color: #fe1964">重置
+                                    <el-button @click="reset" style="border: 1px solid #409EFF; color: #409EFF">重置
                                     </el-button>
                                 </div>
                             </el-row>
@@ -170,7 +170,7 @@
                 <div style="margin-bottom: 20px; font-weight: 700; color: #666; font-size: 15px">
                     合伙人返佣明细列表
                     <span style="font-weight: normal; color: #000; margin-left: 20px">【当前{{ scope.userParentType }}：
-                        <span style="color: #fe1964">{{ scope.userName }}&nbsp;&nbsp;{{ scope.userIphone
+                        <span style="color: #409EFF">{{ scope.userName }}&nbsp;&nbsp;{{ scope.userIphone
                             }}</span>】</span>
                 </div>
                 <el-card shadow="hover" :body-style="{ padding: '0px' }">
@@ -397,7 +397,7 @@ export default {
     }
 
     /deep/.is-left {
-        color: #fe1964;
+        color: #409EFF;
         text-align: center;
     }
 }

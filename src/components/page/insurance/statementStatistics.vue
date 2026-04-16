@@ -51,8 +51,8 @@
                                 style="width: 85px; height: 27px; line-height: 10px">搜索</el-button>
                             <el-button @click="reset" style="
                                     margin-left: 20px;
-                                    border: 1px solid #fe1964;
-                                    color: #fe1964;
+                                    border: 1px solid #409EFF;
+                                    color: #409EFF;
                                     width: 85px;
                                     height: 27px;
                                     line-height: 10px;

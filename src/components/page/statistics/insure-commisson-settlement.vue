@@ -39,7 +39,7 @@
                         </div>
                         <div class="grid-cont-right">
                             <span class="grid-num">可结算保险佣金</span>
-                            <span class="grid-num2" style="color: #fe1964">{{ inData.settlableAmount
+                            <span class="grid-num2" style="color: #409EFF">{{ inData.settlableAmount
                                 }}{{ $t('common_yuan2') }}</span>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                             </el-form-item>
                             <div class="button">
                                 <el-button type="primary" @click="searchData" style="margin-left: 20px">搜索</el-button>
-                                <el-button @click="reset" style="border: 1px solid #fe1964; color: #fe1964">重置
+                                <el-button @click="reset" style="border: 1px solid #409EFF; color: #409EFF">重置
                                 </el-button>
                                 <el-button type="primary" @click="accountRecord" style="margin-left: 20px">结算记录
                                 </el-button>
@@ -136,12 +136,12 @@
             <span slot="footer" class="dialog-footer">
                 <div style="display: flex; justify-content: center; align-items: center">
                     <el-button @click="handleClose"
-                        style="width: 100px; color: #fe1964; margin-right: 15px; border-color: #fe1964">取 消</el-button>
+                        style="width: 100px; color: #409EFF; margin-right: 15px; border-color: #409EFF">取 消</el-button>
                     <el-button type="primary" @click="_push" style="width: 100px" :disabled="disabledSettle">确 定
                     </el-button>
                 </div>
 
-                <div style="margin-top: 30px; color: #fe1964; font-size: 15px; text-align: center">
+                <div style="margin-top: 30px; color: #409EFF; font-size: 15px; text-align: center">
                     *点击确定表示您已线下结算佣金给合伙人，请谨慎操作。
                 </div>
             </span>
@@ -494,13 +494,13 @@ export default {
     /deep/.el-table__row {
         td:nth-child(6) {
             .cell {
-                color: #fe1964;
+                color: #409EFF;
             }
         }
 
         // td:nth-child(3) {
         //     .cell {
-        //         color: #fe1964;
+        //         color: #409EFF;
         //     }
         // }
     }

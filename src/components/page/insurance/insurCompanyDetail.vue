@@ -35,10 +35,10 @@
                         <el-table-column prop="action" label="操作" align="center">
                             <template slot-scope="scope">
                                 <a @click="dowload(scope.row)"
-                                    style="color: #fe1964; cursor: pointer; margin-right: 15px">协议下载</a>
+                                    style="color: #409EFF; cursor: pointer; margin-right: 15px">协议下载</a>
                                 <a @click="redact(scope.row)"
-                                    style="color: #fe1964; cursor: pointer; margin-right: 15px">编辑</a>
-                                <a @click="deleteinfo(scope.row)" style="color: #fe1964; cursor: pointer">删除</a>
+                                    style="color: #409EFF; cursor: pointer; margin-right: 15px">编辑</a>
+                                <a @click="deleteinfo(scope.row)" style="color: #409EFF; cursor: pointer">删除</a>
                             </template>
                         </el-table-column>
                     </el-table>
@@ -62,7 +62,7 @@
                         <el-table-column prop="action" label="操作" align="center">
                             <template slot-scope="scope">
                                 <a @click="dowload(scope.row)"
-                                    style="color: #fe1964; cursor: pointer; margin-right: 15px">协议下载</a>
+                                    style="color: #409EFF; cursor: pointer; margin-right: 15px">协议下载</a>
                             </template>
                         </el-table-column>
                     </el-table>
@@ -179,7 +179,7 @@
             </el-form>
             <span slot="footer" class="dialog-footer">
                 <el-button @click="(dialogVisible = false), (fileList = [])"
-                    style="margin-right: 15px; color: #fe1964; border-color: #fe1964">取 消</el-button>
+                    style="margin-right: 15px; color: #409EFF; border-color: #409EFF">取 消</el-button>
                 <el-button type="primary" @click="uploadData" :disabled="disable">保 存</el-button>
             </span>
         </el-dialog>
@@ -732,11 +732,11 @@ export default {
         }
 
         /deep/.el-upload-list__item-name {
-            color: #fe1964;
+            color: #409EFF;
         }
 
         /deep/.el-icon-document {
-            color: #fe1964;
+            color: #409EFF;
         }
     }
 
@@ -748,7 +748,7 @@ export default {
 
         .el-button {
             padding: 5px 22px;
-            color: #fe1964;
+            color: #409EFF;
             background-color: #fff;
         }
     }

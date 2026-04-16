@@ -12,7 +12,6 @@
                 <!-- 用户名下拉菜单 -->
                 <el-dropdown class="user-name" trigger="click" @command="handleCommand">
                     <span class="el-dropdown-link dorp-down-title">
-                        <img src="../../../public/img/profilePicture.svg" height="32px" />
                         <span>{{ username }}</span>
                         <i class="el-icon-caret-bottom"></i>
                     </span>
@@ -148,7 +147,7 @@ export default {
 </script>
 <style scoped>
 .dorp-down-title {
-    color: #fe1964;
+    color: #409EFF;
     display: flex;
     align-items: center;
     margin-top: 16px;
@@ -166,7 +165,7 @@ export default {
 .dorp-down-title i {
     display: inline-block;
     font-size: 20px;
-    color: #f40064;
+    color: #409EFF;
 }
 
 .header {

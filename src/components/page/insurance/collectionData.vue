@@ -23,7 +23,7 @@
                         <el-table-column prop="suppleStatus" label="补录情况" align="center"> </el-table-column>
                         <el-table-column prop="action" label="操作" align="center">
                             <template slot-scope="scope">
-                                <a @click="handleView(scope.row)" style="color: #fe1964; cursor: pointer">详情</a>
+                                <a @click="handleView(scope.row)" style="color: #409EFF; cursor: pointer">详情</a>
                             </template>
                         </el-table-column>
                     </el-table>
@@ -70,7 +70,7 @@
             <span slot="footer" class="dialog-footer">
                 <el-button
                     @click="(dialogVisible = false), (fileList = [])"
-                    style="margin-right: 15px; color: #fe1964; border-color: #fe1964"
+                    style="margin-right: 15px; color: #409EFF; border-color: #409EFF"
                     >取 消</el-button
                 >
                 <el-button type="primary" @click="uploadData">确 定</el-button>
@@ -253,10 +253,10 @@ export default {
                 margin-top: 5px;
             }
             /deep/.el-upload-list__item-name {
-                color: #fe1964;
+                color: #409EFF;
             }
             /deep/.el-icon-document {
-                color: #fe1964;
+                color: #409EFF;
             }
         }
         /deep/.el-upload--text {
@@ -265,7 +265,7 @@ export default {
             height: 35px;
             .el-button {
                 padding: 5px 22px;
-                color: #fe1964;
+                color: #409EFF;
                 background-color: #fff;
             }
         }

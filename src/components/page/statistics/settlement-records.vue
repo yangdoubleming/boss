@@ -41,7 +41,7 @@
                             <div class="button">
                                 <el-button type="primary" @click="searchData" style="margin-left: 20px">搜索</el-button>
                                 <el-button @click="reset"
-                                    style="border: 1px solid #fe1964; color: #fe1964">重置</el-button>
+                                    style="border: 1px solid #409EFF; color: #409EFF">重置</el-button>
                             </div>
                         </el-row>
                     </el-form>
@@ -65,7 +65,7 @@
 
                     <el-table-column prop="action" label="操作" align="center" width="180px">
                         <template slot-scope="scope">
-                            <a @click="billing(scope.row)" style="color: #fe1964; cursor: pointer">结算详情</a>
+                            <a @click="billing(scope.row)" style="color: #409EFF; cursor: pointer">结算详情</a>
                         </template>
                     </el-table-column>
                 </el-table>
@@ -191,13 +191,13 @@ export default {
     /deep/.el-table__row {
         td:nth-child(2) {
             .cell {
-                color: #fe1964;
+                color: #409EFF;
             }
         }
 
         // td:nth-child(3) {
         //     .cell {
-        //         color: #fe1964;
+        //         color: #409EFF;
         //     }
         // }
     }

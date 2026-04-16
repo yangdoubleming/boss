@@ -20,7 +20,7 @@
                     </el-form-item>
                     <div class="button" style="margin-top: 20px">
                         <el-button type="primary" @click="searchData">查询</el-button>
-                        <el-button @click="reset" style="border: 1px solid #fe1964; color: #fe1964">重置</el-button>
+                        <el-button @click="reset" style="border: 1px solid #409EFF; color: #409EFF">重置</el-button>
                         <span style="margin: 0 20px">已选线索:13条</span>
                         <el-button type="primary" @click="exportExcel" :disabled="disabled">添加返佣资方</el-button>
                     </div>
@@ -39,8 +39,8 @@
 
                     <el-table-column prop="" label="操作" align="center" fixed="right">
                         <template slot-scope="scope">
-                            <a @click="alterDetail(scope.row)" style="color: #fe1964; cursor: pointer; margin-right: 30px">修改</a>
-                            <a @click="viewHistory(scope.row)" style="color: #fe1964; cursor: pointer; margin-right: 30px">历史记录</a>
+                            <a @click="alterDetail(scope.row)" style="color: #409EFF; cursor: pointer; margin-right: 30px">修改</a>
+                            <a @click="viewHistory(scope.row)" style="color: #409EFF; cursor: pointer; margin-right: 30px">历史记录</a>
                         </template>
                     </el-table-column>
                 </el-table>
@@ -105,7 +105,7 @@
                 <el-table-column prop="cancel" label="撤销人" align="center"> </el-table-column>
                 <!-- <el-table-column prop="" label="操作" align="center"  >
                     <template slot-scope="scope">
-                        <a @click="alterDetail(scope.row)" style="color: #fe1964; cursor: pointer; margin-right: 30px" v-if="scope.row.status === '待生效'">修改</a>
+                        <a @click="alterDetail(scope.row)" style="color: #409EFF; cursor: pointer; margin-right: 30px" v-if="scope.row.status === '待生效'">修改</a>
                     </template>
                 </el-table-column> -->
             </el-table>
@@ -287,19 +287,19 @@ export default {
 
         td:nth-child(8) {
             .cell {
-                color: #fe1964;
+                color: #409EFF;
             }
         }
 
         td:nth-child(10) {
             .cell {
-                color: #fe1964;
+                color: #409EFF;
             }
         }
 
         // td:nth-child(3) {
         //     .cell {
-        //         color: #fe1964;
+        //         color: #409EFF;
         //     }
         // }
     }
