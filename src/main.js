@@ -149,7 +149,7 @@ router.beforeEach((to, from, next) => {
 
     // permissionList(localStorage.getItem('role')).then(res => {
     // localStorage.setItem('menuList', JSON.stringify(res.data));
-    document.title = `${to.meta.title} | 豆沙包`;
+    document.title = `${to.meta.title} | 保险后台`;
     const token = localStorage.getItem('token');
     const role = localStorage.getItem('userName');
     let routers = JSON.parse(localStorage.getItem('menuList'));
@@ -174,7 +174,7 @@ router.beforeEach((to, from, next) => {
             isNext = false;
             next();
         } else {
-            document.title = `豆沙包`;
+            document.title = `保险后台`;
             Vue.prototype.$message.info('跳转页面无权限或页面不存在');
             next('login'); //考虑添加403页面 返回首页或者登录页
         }

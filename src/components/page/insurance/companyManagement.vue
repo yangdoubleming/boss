@@ -3,7 +3,7 @@
         <div style="display: flex; align-items: center; padding: 18px">
             <div style="color: rgba(0, 0, 0, 0.45); font-size: 14px; display: flex; align-items: center">
                 <img src="../../../../public/img/favicon.png" style="width: 17px; height: 17px; margin-right: 5px"
-                    alt />豆沙包 / 保险管理 /
+                    alt />保险后台 / 保险管理 /
             </div>
 
             <span style="color: rgba(0, 0, 0, 0.65); font-size: 14px; padding-left: 5px">保司管理</span>

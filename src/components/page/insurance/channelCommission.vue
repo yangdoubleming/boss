@@ -8,7 +8,7 @@
                     src="../../../../public/img/favicon.png"
                     style="width: 17px; height: 17px; margin-right: 5px"
                     alt
-                />豆沙包 / 保险管理 /
+                />保险后台 / 保险管理 /
             </div>
 
             <span style="color: rgba(0, 0, 0, 0.65); font-size: 14px; padding-left: 5px">渠道返佣流水</span>

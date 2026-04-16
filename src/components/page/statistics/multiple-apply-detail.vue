@@ -92,7 +92,6 @@
         </el-dialog>
 
         <PFscoring v-if="activeIndex == 4 && scoringData && scoringData.length" :scoringData="scoringData" />
-        <div class="end">版权所有© 2021 豆沙包科技有限公司 沪ICP备15015443号-1</div>
     </div>
 </template>
 

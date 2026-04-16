@@ -6,7 +6,7 @@
                     src="../../../../public/img/favicon.png"
                     style="width:17px;height:17px;margin-right:5px"
                     alt
-                />豆沙包 /
+                />保险后台 /
             </div>
 
             <span style="color:rgba(0,0,0,.65);font-size:14px;padding-left:5px">{{$route.meta.title}}</span>

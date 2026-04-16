@@ -247,7 +247,7 @@
                         <el-radio v-model="ruleForm.customerTelephone" label>隐藏</el-radio>
                     </div>
                 </el-form-item>
-                <el-form-item label="豆沙包logo" required>
+                <el-form-item label="保险后台logo" required>
                     <div v-if="isApprove">{{ ruleForm.logoUrl ? '默认' : '隐藏' }}</div>
                     <div v-else>
                         <el-radio v-model="ruleForm.logoUrl"

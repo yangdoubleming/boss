@@ -1,6 +1,6 @@
 const zh = {
     //公共
-    common_dsb: '豆沙包',
+    common_dsb: '保险后台',
     common_yuan: '（元）',
     common_yuan2: '元',
     common_see: '查看详情',

@@ -3,7 +3,7 @@
         <div style="display: flex; align-items: center; padding: 18px">
             <div style="color: rgba(0, 0, 0, 0.45); font-size: 14px; display: flex; align-items: center">
                 <img src="../../../../public/img/favicon.png" style="width: 17px; height: 17px; margin-right: 5px"
-                    alt />豆沙包 /
+                    alt />保险后台 /
             </div>
             <span style="color: rgba(0, 0, 0, 0.65); font-size: 14px; padding-left: 5px">{{ $route.meta.title }}</span>
         </div>
@@ -151,8 +151,6 @@
         </el-dialog>
         <PFscoring v-if="activeIndex == 4 && scoringData && scoringData.length" :scoringData="scoringData" />
         <pfDataModel v-if="activeIndex == 7" :pageData="pfData" />
-
-        <div class="end">版权所有© 2021 豆沙包科技有限公司 沪ICP备15015443号-1</div>
     </div>
 </template>
 
