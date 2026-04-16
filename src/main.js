@@ -7,9 +7,6 @@ import md5 from 'js-md5';
 import '../public/css/theme-green/index.css';
 import i18n from './i18n';
 import 'babel-polyfill';
-import VueClipBoard from 'vue-clipboard2';
-import BlackDashboard from './plugins/blackDashboard';
-import dataV from '@jiaminghi/data-view';
 // 按需引入vue-awesome图标
 import Icon from 'vue-awesome/components/Icon';
 import 'vue-awesome/icons/chart-bar.js';
@@ -18,17 +15,11 @@ import 'vue-awesome/icons/chart-pie.js';
 import 'vue-awesome/icons/chart-line.js';
 import 'vue-awesome/icons/align-left.js';
 Vue.component('icon', Icon);
-Vue.use(dataV);
-Vue.use(VueClipBoard);
-Vue.use(BlackDashboard);
 import * as echarts from 'echarts';
 import store from './store/store';
 import { isArray } from '@vue/shared';
 import { permissionList } from './api/user';
 
-if (process.env.VUE_APP_MOCK) {
-  require('./mock/index.js')
-}
 
 Vue.prototype.$md5 = md5;
 Vue.prototype.$showBtn = function (code) {

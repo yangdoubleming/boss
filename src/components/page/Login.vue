@@ -1,8 +1,7 @@
 <template>
     <div class="login-wrap">
-        <Language style="float: right;margin-right: 30px;margin-top: 20px;" />
         <div class="ms-login" v-if="isPhone==2">
-            <div class="ms-title">BOSS V3.0</div>
+            <div class="ms-title">保险后台管理系统</div>
             <el-form :model="param" :rules="rules" ref="login" label-width="0px" class="ms-content">
                 <el-form-item prop="username">
                     <el-input v-model="param.username" placeholder="username">
@@ -67,10 +66,8 @@
 <script>
 import { login } from '../../api/login';
 import { permissionList } from '../../api/user';
-import Language from '../../components/common/language.vue';
 export default {
     components: {
-        Language
     },
     data: function () {
         return {
@@ -232,7 +229,7 @@ export default {
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url(../../../public/img/login-bgi.jpg);
+    background-image: url(../../../public/img/login-bg.jpg);
     background-size: 100%;
 }
 .ms-title {

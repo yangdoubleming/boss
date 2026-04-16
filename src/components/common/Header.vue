@@ -9,10 +9,6 @@
             <div class="header-user-con">
                 <!-- 全屏显示 -->
                 <div></div>
-                <!-- 用户头像 -->
-                <div class="user-avator"></div>
-                <!-- 中英文切换 -->
-                <Language style="margin-right: 15px" />
                 <!-- 用户名下拉菜单 -->
                 <el-dropdown class="user-name" trigger="click" @command="handleCommand">
                     <span class="el-dropdown-link dorp-down-title">
@@ -49,10 +45,8 @@
 import bus from '../common/bus';
 import { loginOut } from '../../api/login';
 import { userList, roleList, roleAllocat, addUser, updateUser } from '../../api/user';
-import Language from './language.vue';
 export default {
     components: {
-        Language
     },
     data() {
         return {
