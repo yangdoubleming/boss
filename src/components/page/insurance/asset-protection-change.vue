@@ -1025,7 +1025,7 @@ export default {
                     let errorMessageHtml = '';
                     errors.forEach((error, index) => {
                         if (index > 0) errorMessageHtml += '<br/>';
-                        errorMessageHtml += `<span style="color: #f56c6c;">第${error.line}行包含${error.forbidden}，请删除</span>`;
+                        errorMessageHtml += `<span style="color: #65affa;">第${error.line}行包含${error.forbidden}，请删除</span>`;
                     });
                     
                     // 包装错误信息，添加滚动容器
@@ -1082,7 +1082,7 @@ export default {
                 let errorMessageHtml = '<p style="margin-bottom: 10px; color: #333;">产品清单中包含禁保产品：</p>';
                 forbiddenErrors.forEach((error, index) => {
                     if (index > 0) errorMessageHtml += '<br/>';
-                    errorMessageHtml += `<span style="color: #f56c6c;">第${error.line}行包含${error.forbidden}，请删除</span>`;
+                    errorMessageHtml += `<span style="color: #65affa;">第${error.line}行包含${error.forbidden}，请删除</span>`;
                 });
                 
                 this.$alert(errorMessageHtml, '发现禁保产品', {

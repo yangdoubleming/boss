@@ -905,8 +905,8 @@ export default {
 }
 
 .orange {
-    background-color: #f56c6c;
-    border: 1px solid #fd0606;
+    background-color: #65affa;
+    border: 1px solid #409EFF;
     color: #fff;
     padding: 5px 17px;
     margin-right: 20px;

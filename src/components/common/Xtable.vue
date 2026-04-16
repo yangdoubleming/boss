@@ -106,7 +106,7 @@
                                     height: 8px;
                                     width: 8px;
                                     border-radius: 50%;
-                                    background-color: #f56c6c;
+                                    background-color: #65affa;
                                     margin-left: 10px;
                                     display: inline-block;
                                     margin-bottom: 15px;
