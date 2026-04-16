@@ -1,14 +1,14 @@
 <template>
     <div class="sidebar">
         <div style="background: #282829;height: 80px;" v-if="!collapse">
-            <img style="float: left;margin-top: 18px;margin-left: 40px;transition: margin-left .3s;border-radius: 10px;height: 48px;"
+            <img style="float: left;margin-top: 18px;margin-left: 7px;transition: margin-left .3s;border-radius: 10px;height: 48px;"
                 src="../../../public/img/icon-dun.png" />
-            <div style="margin:0 15px;margin-left:15px;transition: margin-left .3s;margin-top: 31px;float: left;font-size: 16px;color:white;">保险后台管理系统</div>
+            <div style="margin:0 15px;margin-left:10px;transition: margin-left .3s;margin-top: 31px;float: left;font-size: 16px;color:white;">保险后台管理系统</div>
         </div>
         <div style="background: #282829;height: 80px;" v-else>
             <img style="float: left;margin-top: 18px;margin-left: 7px;transition: margin-left .3s;border-radius: 10px;height: 48px;"
                 src="../../../public/img/icon-dun.png" />
-                <div style="margin:0 15px;margin-left:15px;transition: margin-left .3s;margin-top: 31px;float: left;font-size: 16px;color:white;">保险后台管理系统</div>
+                <div style="margin:0 15px;margin-left:10px;transition: margin-left .3s;margin-top: 31px;float: left;font-size: 16px;color:white;">保险后台管理系统</div>
         </div>
         <el-menu class="sidebar-el-menu" :default-active="show" :collapse="collapse" background-color="#282829"
             text-color="rgb(152, 158, 173)" active-text-color="#409EFF" unique-opened router @select="handleSelect">
@@ -212,7 +212,7 @@ export default {
 }
 
 .sidebar-el-menu:not(.el-menu--collapse) {
-    width: 250px;
+    width: 200px;
     border-right: none;
 }
 
